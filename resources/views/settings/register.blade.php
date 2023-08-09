@@ -321,7 +321,7 @@ use Xpressengine\User\UserRegisterHandler;
 
                                         {{-- password confirmation  --}}
                                         {{-- password_confirm --}}
-                                        <tr>
+                                        <tr class="__regsetting-password-wrap">
                                             <td>
                                                 {{ xe_trans('xe::passwordConfirm') }}
                                             </td>
