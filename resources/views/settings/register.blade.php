@@ -318,6 +318,29 @@ use Xpressengine\User\UserRegisterHandler;
                                                 </label>
                                             </td>
                                         </tr>
+
+                                        {{-- password confirmation  --}}
+                                        {{-- password_confirm --}}
+                                        <tr>
+                                            <td>
+                                                {{ xe_trans('xe::passwordConfirm') }}
+                                            </td>
+                                            <td class="text-align--center">
+                                                <label class="xu-label-checkradio">
+                                                    <input name="use_password_confirm" type="checkbox"
+                                                           @if ($config->get('use_password_confirm') === true) checked @endif>
+                                                    <span class="xu-label-checkradio__helper"></span>
+                                                </label>
+                                            </td>
+                                            <td class="text-align--center">
+                                                <label class="xu-label-checkradio xu-label-checkradio--disabled">
+                                                    <input name="require_password_confirm" type="checkbox"
+                                                           @if ($config->get('use_password_confirm') === true) checked @endif>
+                                                    <span class="xu-label-checkradio__helper"></span>
+                                                </label>
+                                            </td>
+                                        </tr>
+
                                     </tbody>
                                 </table>
                             </div>
